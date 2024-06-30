@@ -137,14 +137,45 @@ h1 {
     opacity: 0.8;
 }
 
+.coupon-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.referral-code {
+    text-align: left;
+}
+
+.referral-label {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    opacity: 0.8;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.referral-label sup {
+    font-size: 0.7rem;
+    margin-left: 5px;
+}
+
+.code {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 0;
+}
+
 .btn-claim {
     display: inline-block;
-    padding: 12px 25px;
+    padding: 8px 15px;
     background-color: var(--primary-color);
     color: #ffffff;
     text-align: center;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 600;
     border-radius: 50px;
     transition: all 0.3s ease;
@@ -154,6 +185,7 @@ h1 {
     box-shadow: 
         5px 5px 10px var(--shadow-color), 
         -5px -5px 10px var(--light-shadow);
+    min-width: 100px;
 }
 
 .btn-claim:hover {
@@ -238,5 +270,13 @@ footer {
     }
     .footer-content {
         flex-direction: column;
+    }
+    .coupon-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .btn-claim {
+        margin-top: 15px;
+        align-self: flex-end;
     }
 }
