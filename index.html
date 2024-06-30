@@ -18,221 +18,12 @@
     <meta name="twitter:title" content="老司机福利 - 港美股开户丰厚奖励，富途牛牛、长桥、华盛通、老虎证券、盈透证券、嘉信理财等开户奖励轻松领取">
     <meta name="twitter:description" content="老司机福利 - 港美股开户丰厚奖励，富途牛牛、长桥、华盛通、老虎证券、盈透证券、嘉信理财等开户奖励轻松领取">
     <meta name="twitter:image" content="https://www.example.com/images/coupon-center-twitter.jpg">
-    <style>
-        :root {
-            --primary-color: #6c5ce7;
-            --secondary-color: #a29bfe;
-            --background-color: #f0f3f6;
-            --text-color: #2d3436;
-            --shadow-color: #babecc;
-            --light-shadow: #ffffff;
-        }
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--background-color);
-            color: var(--text-color);
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            padding-top: 60px; /* 为固定导航栏腾出空间 */
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            flex-grow: 1;
-            padding-top: 80px; /* 为固定导航栏腾出空间 */
-        }
-        nav {
-            background-color: #000000;
-            padding: 15px 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1rem;
-            transition: opacity 0.3s ease;
-        }
-        nav ul li a:hover {
-            opacity: 0.8;
-        }
-        h1 {
-            color: var(--primary-color);
-            text-align: center;
-            margin: 40px 0;
-            font-size: 2.5rem;
-            font-weight: 700;
-            letter-spacing: -1px;
-        }
-        .coupon-list {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            justify-content: center;
-        }
-        .coupon-item {
-            background-color: var(--background-color);
-            border-radius: 20px;
-            padding: 30px;
-            transition: all 0.3s ease;
-            box-shadow: 
-                8px 8px 15px var(--shadow-color), 
-                -8px -8px 15px var(--light-shadow);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        .coupon-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 
-                12px 12px 20px var(--shadow-color), 
-                -12px -12px 20px var(--light-shadow);
-        }
-        .coupon-amount {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #e74c3c; /* 优惠券常用的红色 */
-            margin-bottom: 15px;
-        }
-        .coupon-title {
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-bottom: 15px;
-            color: #2c3e50; /* 深黑色 */
-        }
-        .coupon-rules {
-            font-size: 0.9rem;
-            margin-bottom: 20px;
-            color: var(--text-color);
-            opacity: 0.8;
-            position: relative;
-        }
-        .coupon-rules-details {
-            display: none;
-            margin-top: 10px;
-            padding: 10px;
-            background-color: rgba(255, 255, 255, 0.5);
-            border-radius: 10px;
-            font-size: 0.85rem;
-        }
-        .coupon-validity {
-            font-size: 0.9rem;
-            margin-bottom: 20px;
-            color: var(--text-color);
-            opacity: 0.8;
-        }
-        .btn-claim {
-            display: inline-block;
-            padding: 12px 25px;
-            background-color: var(--primary-color);
-            color: #ffffff;
-            text-align: center;
-            text-decoration: none;
-            font-size: 1rem;
-            font-weight: 600;
-            border-radius: 50px;
-            transition: all 0.3s ease;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            box-shadow: 
-                5px 5px 10px var(--shadow-color), 
-                -5px -5px 10px var(--light-shadow);
-        }
-        .btn-claim:hover {
-            background-color: var(--secondary-color);
-            transform: translateY(-2px);
-            box-shadow: 
-                7px 7px 12px var(--shadow-color), 
-                -7px -7px 12px var(--light-shadow);
-            color: #ffffff;
-            text-decoration: none;
-        }
-        .btn-claim:active {
-            transform: translateY(0);
-            box-shadow: inset 5px 5px 10px var(--shadow-color), 
-                        inset -5px -5px 10px var(--light-shadow);
-        }
-        .btn-details {
-            position: absolute;
-            right: 0;
-            top: 0;
-            background: none;
-            border: none;
-            color: var(--secondary-color);
-            font-size: 0.8rem;
-            cursor: pointer;
-            padding: 2px 5px;
-            text-decoration: underline;
-            transition: color 0.3s ease;
-        }
-        .btn-details:hover {
-            color: var(--primary-color);
-        }
-        footer {
-            background-color: #000000;
-            color: #ffffff;
-            padding: 20px 0;
-            text-align: center;
-            margin-top: 40px;
-        }
-        .footer-content {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        .footer-section {
-            margin: 10px;
-        }
-        .footer-section h3 {
-            margin-bottom: 10px;
-        }
-        .footer-section p, .footer-section a {
-            margin: 5px 0;
-            color: #ffffff;
-            text-decoration: none;
-        }
-        .footer-section a:hover {
-            text-decoration: underline;
-        }
-        @media (max-width: 1024px) {
-            .coupon-list {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-        @media (max-width: 768px) {
-            .coupon-list {
-                grid-template-columns: 1fr;
-            }
-            .coupon-item {
-                max-width: 100%;
-            }
-            .footer-content {
-                flex-direction: column;
-            }
-        }
-    </style>
+    <link rel="icon" type="image/x-icon" href="icon.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
     <header>
@@ -251,7 +42,7 @@
         <section class="coupon-list">
             <article class="coupon-item">
                 <div class="coupon-amount">$1400 HKD</div>
-                <h2 class="coupon-title">老虎证券开户福利</h2>
+                <h2 class="coupon-title">老虎证券开户福利：总奖励价值1300港币+Laosji专属100港币代金券+180天30次免佣卡</h2>
                 <div class="coupon-rules">
                     <button class="btn-details">详情</button>
                     <p>老虎新开户奖赏</p>
@@ -288,11 +79,11 @@
                 <a href="https://app.longbridgehk.com/ac/oa?account_channel=lb&channel=HB100034&invite-code=48T09P" class="btn-claim" target="_blank" rel="noopener noreferrer">立即领取</a>
             </article>
             <article class="coupon-item">
-                <div class="coupon-amount">开户领取1400港币奖励</div>
-                <h2 class="coupon-title">開户即送</h2>
+                <div class="coupon-amount">$1400 HKD</div>
+                <h2 class="coupon-title">新用户活动，赠送1100港币交易现金券+一股可口可乐，套利到手1400港币</h2>
                 <div class="coupon-rules">
                     <button class="btn-details">详情</button>
-                    <p>无门槛使用</p>
+                    <p>之前开户还没入金也可以在华盛通app填写邀请码E1NC参与新用户活动</p>
                     <p>首入金金額(或等值)≥HKD10,000/USD1,300</p>
                     <div class="coupon-rules-details">
                         <p>1. 一股可口可樂(KO)(~HKD480)</p>
@@ -328,7 +119,7 @@
                 <p><a href="https://mp.weixin.qq.com/s/ATihgUW75i1nSRe5PFcPcQ">微信公众号</a></p>
             </div>
         </div>
-        <p>&copy; 2024laosiji. 保留所有权利。</p>
+        <p>&copy; 2024laosiji，老司机福利</p>
     </footer>
 
     <script>
