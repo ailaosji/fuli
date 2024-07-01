@@ -80,7 +80,7 @@ h1 {
 }
 
 .coupon-item {
-    background-color: var(--background-color);
+    background-color: #FFF;
     border-radius: 20px;
     padding: 30px;
     transition: all 0.3s ease;
